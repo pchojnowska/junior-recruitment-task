@@ -1,1 +1,39 @@
-plik startowy aplikacji
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<main>
+    <header>ToDo List</header>
+        <div>
+            <ul id="taskList">
+                <li class="notDone">
+                    <input type="checkbox">
+                    <span>Example task</span>
+                    <button type="button" class="trash">
+                        <img src="../assets/trash.png"/>
+                    </button>
+                </li>
+
+                <li class="done">
+                    <input type="checkbox">
+                    <span>Example task</span>
+                    <button type="button" class="trash">
+                        <img src="../assets/trash.png"/>
+                    </button>
+                </li>
+
+            </ul>
+
+            <form id="newTaskForm">
+                <button><strong>+</strong></button>
+                <input id="taskField" type="text" name="task"/>
+            </form>
+        </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
